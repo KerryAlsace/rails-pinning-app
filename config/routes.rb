@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pins#index'
 
+  get "pins/name-:slug" => "pins#show_by_name"
+
   resources :pins
 
   # /library will show the same thing as /pins
