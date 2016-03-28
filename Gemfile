@@ -46,3 +46,7 @@ end
 
 gem 'rspec'
 gem 'rspec-rails'
+
+# Deliver assets in the same way in production and development
+# Log info to a stream called stdout
+gem 'rails_12factor'
