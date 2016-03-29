@@ -30,19 +30,5 @@ module CoderPinterest
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-    
-    # Terminal suggested adding this with this message
-    # Web Console is activated in the test environment, which is
-    # usually a mistake. To ensure it's only activated in development
-    # mode, move it to the development group of your Gemfile:
-
-    #gem 'web-console', group: :development
-
-    #If you still want to run it the test environment (and know
-    #what you are doing), put this in your Rails application
-    #configuration:
-
-    #config.web_console.development_only = false
-    config.web_console.development_only = false
   end
 end
