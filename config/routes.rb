@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get "pins/name-:slug" => "pins#show_by_name", as: 'pin_by_name'
 
+  get '/new' => 'pins#new'
+
   resources :pins
 
   # /library will show the same thing as /pins
